@@ -1,4 +1,5 @@
 #pragma once
+// ref: Anthony Williams -Multithreading c++11 extensions
 #include <iostream>
 #include <vector>
 #include <thread>
