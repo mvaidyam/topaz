@@ -142,7 +142,6 @@ void producer(void)
     std::ifstream file(inputfile.c_str());
     if (file.is_open()) {
         std::string line;
-        int count =0;
         while (std::getline(file, line)) {
             extract(line);
         }
@@ -174,7 +173,7 @@ void consumer(void)
     showResults();
 }
 
-void main(int argc, char* argv[])
+int main(int argc, char* argv[])
 {
     if(argc <= 1)
     {
@@ -219,5 +218,5 @@ void main(int argc, char* argv[])
 
     for (auto& t : v)
         t.join();
-    return;
+    return 0;
 }
